@@ -280,5 +280,28 @@ Route::get('/', function () {
         'NEWS',
         'SHOP'
     ];
-    return view('pages.index',  compact("comics", "componentfooter", "componentiheader"));
+    $componentiindex = [
+        [
+            'img_src' => 'resources/imgs/buy-comics-digital-comics.png',
+            'text' => 'DIGITAL COMIC'
+        ],
+        [
+            'img_src' => "resources/imgs/buy-comics-merchandise.png",
+            'text' => 'DIGITAL COMIC'
+        ],
+        [
+            'img_src' => 'resources/imgs/buy-comics-subscriptions.png',
+            'text' => 'DIGITAL COMIC'
+        ],
+        [
+            'img_src' => 'resources/imgs/buy-comics-shop-locator.png',
+            'text' => 'DIGITAL COMIC'
+        ],
+        [
+            'img_src' => 'resources/imgs/buy-dc-power-visa.svg',
+            'text' => 'DIGITAL COMIC'
+        ]
+    ];
+
+    return view('pages.index',  compact("comics", "componentfooter", "componentiheader", "componentiindex"));
 });

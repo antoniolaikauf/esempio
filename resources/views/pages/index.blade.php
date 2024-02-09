@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
-<!-- @section('head')
+{{-- <!-- @section('head')
 <title>Home</title>
-@endsection -->
+@endsection --> --}}
 @section('content')
 <!-- inizio sezione card  -->
 <section class="bg-black">
@@ -39,27 +39,15 @@
         <div class="row">
         
             <div class="col-12 d-flex justify-content-between align-items-center">
+                   {{-- ciclo per card  --}}
+                @foreach ($componentiindex as $componente)
                 <div class="d-flex align-items-center ">
-                    <img src="{{ Vite::asset('resources/imgs/buy-comics-digital-comics.png') }}" alt="">
-                    <div class="text-white ms-3">DIGITAL COMIC</div>
+                    {{-- <img src="{{ Vite::asset('$componente['img_src']') }}" alt=""> --}}
+                    <img src="{{Vite::asset($componente['img_src'])}}" alt="">
+                    <div class="text-white  ms-3">{{$componente['text']}}</div>
                 </div>
-                <div class="d-flex align-items-center ">
-                    <img src="{{ Vite::asset('resources/imgs/buy-comics-merchandise.png') }}" alt="">
-                    <div class="text-white  ms-3">DIGITAL COMIC</div>
-                </div>
-                <div class="d-flex align-items-center ">
-                    <img src="{{ Vite::asset('resources/imgs/buy-comics-subscriptions.png') }}" alt="">
-                    <div class="text-white  ms-3">DIGITAL COMIC</div>
-                </div>
+                @endforeach
 
-                <div class="d-flex align-items-center ">
-                    <img src="{{ Vite::asset('resources/imgs/buy-comics-shop-locator.png') }}" alt="">
-                    <div class="text-white  ms-3">DIGITAL COMIC</div>
-                </div>
-                <div class="d-flex align-items-center ">
-                    <img src="{{ Vite::asset('resources/imgs/buy-dc-power-visa.svg') }}" alt="">
-                    <div class="text-white  ms-3 ">DIGITAL COMIC</div>
-                </div>
             </div>
         </div>
     </div>
