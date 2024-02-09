@@ -40,7 +40,7 @@
 
             <div class="col-12 d-flex justify-content-between align-items-center">
                  <!-- ciclo per card   -->
-                @foreach ($componentiindex as $componente)
+                @foreach ($componentiIndex as $componente)
                 <div class="d-flex align-items-center ">
                     
                     <img src="{{Vite::asset($componente['img_src'])}}" alt="#">

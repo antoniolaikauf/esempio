@@ -217,7 +217,7 @@ Route::get('/', function () {
         ],
     ];
 
-    $componentfooter = [
+    $componentFooter = [
         [
             'nome' => 'DC COMIC',
             'link' => '#',
@@ -268,7 +268,7 @@ Route::get('/', function () {
         ]
 
     ];
-    $componentiheader = [
+    $componentiHeader = [
         'CHARACTERS',
         'COMICS',
         'MOVIE',
@@ -280,7 +280,7 @@ Route::get('/', function () {
         'NEWS',
         'SHOP'
     ];
-    $componentiindex = [
+    $componentiIndex = [
         [
             'img_src' => 'resources/imgs/buy-comics-digital-comics.png',
             'text' => 'DIGITAL COMIC'
@@ -310,5 +310,5 @@ Route::get('/', function () {
         'resources/imgs/footer-youtube.png',
     ];
 
-    return view('pages.index',  compact("comics", "componentfooter", "componentiheader", "componentiindex" ,"componentiIcone"));
+    return view('pages.index',  compact("comics", "componentFooter", "componentiHeader", "componentiIndex" ,"componentiIcone"));
 });

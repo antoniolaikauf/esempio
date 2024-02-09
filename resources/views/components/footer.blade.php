@@ -6,7 +6,7 @@
                 <div>
                     <!-- ciclo che stampa le liste  -->
                     <div class="d-flex">
-                        @foreach($componentfooter as $lista)
+                        @foreach($componentFooter as $lista)
                         <ul>
                             <li>
                                 <h6 class="p-3 ps-0 text-white">

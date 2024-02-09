@@ -7,7 +7,7 @@
                 <!-- barra di ricerca per utente  -->
                 <ul class="d-flex align-items-center m-0">
                     <!-- ciclo per stampare componenti header  -->
-                    @foreach($componentiheader as $componente)
+                    @foreach($componentiHeader as $componente)
                         <li>
                             {{$componente}}
                         </li>
