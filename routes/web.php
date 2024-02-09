@@ -302,6 +302,13 @@ Route::get('/', function () {
             'text' => 'DIGITAL COMIC'
         ]
     ];
+    $componentiIcone = [
+        'resources/imgs/footer-facebook.png',
+        'resources/imgs/footer-periscope.png',
+        'resources/imgs/footer-pinterest.png',
+        'resources/imgs/footer-twitter.png',
+        'resources/imgs/footer-youtube.png',
+    ];
 
-    return view('pages.index',  compact("comics", "componentfooter", "componentiheader", "componentiindex"));
+    return view('pages.index',  compact("comics", "componentfooter", "componentiheader", "componentiindex" ,"componentiIcone"));
 });

@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
-{{-- <!-- @section('head')
+ <!-- @section('head')
 <title>Home</title>
-@endsection --> --}}
+@endsection --> 
 @section('content')
 <!-- inizio sezione card  -->
 <section class="bg-black">
@@ -37,13 +37,13 @@
 <section class="bg-primary py-5">
     <div class="container">
         <div class="row">
-        
+
             <div class="col-12 d-flex justify-content-between align-items-center">
-                   {{-- ciclo per card  --}}
+                 <!-- ciclo per card   -->
                 @foreach ($componentiindex as $componente)
                 <div class="d-flex align-items-center ">
-                    {{-- <img src="{{ Vite::asset('$componente['img_src']') }}" alt=""> --}}
-                    <img src="{{Vite::asset($componente['img_src'])}}" alt="">
+                    
+                    <img src="{{Vite::asset($componente['img_src'])}}" alt="#">
                     <div class="text-white  ms-3">{{$componente['text']}}</div>
                 </div>
                 @endforeach
