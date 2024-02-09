@@ -1,8 +1,10 @@
 <div class="container py-3">
     <div class="row">
         <div class="col-12 d-flex justify-content-between align-items-center">
-            qua immagine
+            <!-- immagine logo  -->
+            <img src="{{ Vite::asset('resources/imgs/dc-logo.png') }}" alt="">
             <div>
+                <!-- barra di ricerca per utente  -->
                 <ul class="d-flex align-items-center">
                     <li>CHARACTERS</li>
                     <li>COMICS</li>
@@ -27,6 +29,6 @@
 </div>
 <div class="position-relative">
     <div id="jumbotron">
-        
+        <!-- jumbotron immgine -->
     </div>
 </div>

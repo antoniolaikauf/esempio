@@ -14,14 +14,16 @@
 </head>
 
 <body>
-    <!-- <div class="text-center">
-        @include('components.footer')
-    </div> -->
-    <!-- inclusione header  -->
+    <!-- inizion header -->
     <header>
-        @include('components.header')
-        @yield('content')
+        <nav>
+            @include('components.header')
+        </nav>
     </header>
+    <!-- inizio main -->
+    <main>
+        @yield('content')
+    </main>
 </body>
 
 </html>
