@@ -3,8 +3,8 @@
 <title>Home</title>
 @endsection -->
 @section('content')
-
-<div class="bg-black">
+<!-- inizio sezione card  -->
+<section class="bg-black">
     <div class="container py-5">
         <div class="row position-relative">
             <!-- bottone per attuale serie  -->
@@ -31,5 +31,38 @@
             </div>
         </div>
     </div>
-</div>
+</section>
+<!-- fine sezione card  -->
+<!-- inizio sezione utility per utente  -->
+<section class="bg-primary py-5">
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center ">
+                    <img src="{{ Vite::asset('resources/imgs/buy-comics-digital-comics.png') }}" alt="">
+                    <div class="text-white ms-3">DIGITAL COMIC</div>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <img src="{{ Vite::asset('resources/imgs/buy-comics-merchandise.png') }}" alt="">
+                    <div class="text-white  ms-3">DIGITAL COMIC</div>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <img src="{{ Vite::asset('resources/imgs/buy-comics-subscriptions.png') }}" alt="">
+                    <div class="text-white  ms-3">DIGITAL COMIC</div>
+                </div>
+
+                <div class="d-flex align-items-center ">
+                    <img src="{{ Vite::asset('resources/imgs/buy-comics-shop-locator.png') }}" alt="">
+                    <div class="text-white  ms-3">DIGITAL COMIC</div>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <img src="{{ Vite::asset('resources/imgs/buy-dc-power-visa.svg') }}" alt="">
+                    <div class="text-white  ms-3 ">DIGITAL COMIC</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- fine sezione utility per utente  -->
 @endsection
