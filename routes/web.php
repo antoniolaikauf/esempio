@@ -216,5 +216,69 @@ Route::get('/', function () {
             ],
         ],
     ];
-    return view('pages.index',  compact("comics"));
+
+    $componentfooter = [
+        [
+            'nome' => 'DC COMIC',
+            'link' => '#',
+            'sottocomponenti' => [
+                ['nome' => 'Characters'],
+                ['nome' => 'Comics'],
+                ['nome' => 'Movies'],
+                ['nome' => 'TV'],
+                ['nome' => 'Games'],
+                ['nome' => 'News']
+            ],
+        ],
+        [
+            'nome' => 'SHOP',
+            'link' => '#',
+            'sottocomponenti' => [
+                ['nome' => 'Shop DC'],
+                ['nome' => 'Shop DC Collectibles']
+            ]
+        ],
+        [
+            'nome' => 'DC',
+            'link' => '#',
+            'sottocomponenti' => [
+                ['nome' => 'Terms Of Use', 'link' => '#'],
+                ['nome' => 'Privacy policy (Nes)', 'link' => '#'],
+                ['nome' => 'Ad Choices', 'link' => '#'],
+                ['nome' => 'Advertising', 'link' => '#'],
+                ['nome' => 'Jobs', 'link' => '#'],
+                ['nome' => 'Subscriptions', 'link' => '#'],
+                ['nome' => 'Talent Workshop', 'link' => '#'],
+                ['nome' => 'CPSC Certificates', 'link' => '#'],
+                ['nome' => 'Ratings', 'link' => '#'],
+                ['nome' => 'Shop Help', 'link' => '#'],
+                ['nome' => 'Contact Us', 'link' => '#']
+            ]
+        ],
+        [
+            'nome' => 'SITES',
+            'link' => '#',
+            'sottocomponenti' => [
+                ['nome' => 'DC', 'link' => '#'],
+                ['nome' => 'MAD Magazine', 'link' => '#'],
+                ['nome' => 'DC Kids', 'link' => '#'],
+                ['nome' => 'DC Universe', 'link' => '#'],
+                ['nome' => 'DC Power Visa', 'link' => '#']
+            ]
+        ]
+
+    ];
+    $componentiheader = [
+        'CHARACTERS',
+        'COMICS',
+        'MOVIE',
+        'TV',
+        'GAMES',
+        'COLLECTIBLES',
+        'VIDEOS',
+        'FANS',
+        'NEWS',
+        'SHOP'
+    ];
+    return view('pages.index',  compact("comics", "componentfooter", "componentiheader"));
 });

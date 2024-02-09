@@ -4,105 +4,22 @@
         <div class="row ">
             <div class="col-12 d-flex justify-content-between">
                 <div>
+                    {{-- ciclo che stampa le liste --}}
                     <div class="d-flex">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <h3>DC COMIC</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Characters </a>
-                            </li>
-                            <li>
-                                <a href="#">Comics</a>
-                            </li>
-                            <li>
-                                <a href="#"> Movies</a>
-                            </li>
-                            <li>
-                                <a href="#"> TV</a>
-                            </li>
-                            <li>
-                                <a href="#"> Games</a>
-                            </li>
-                            <li>
-                                <a href="#"> News</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3>SHOP</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"> Shop DC</a>
-                            </li>
-                            <li>
-                                <a href="#">Shop DC Collectibles </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <h3>DC</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"> Terms Of Use</a>
-                            </li>
-                            <li>
-                                <a href="#"> Privacy policy ( Nes)</a>
-                            </li>
-                            <li>
-                                <a href="#"> Ad Choises</a>
-                            </li>
-                            <li>
-                                <a href="#"> Advertising</a>
-                            </li>
-                            <li>
-                                <a href="#"> Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#"> Subscriptions</a>
-                            </li>
-                            <li>
-                                <a href="#"> Talent Workshop</a>
-                            </li>
-                            <li>
-                                <a href="#"> CPSC Certificates</a>
-                            </li>
-                            <li>
-                                <a href="#"> Ratingd</a>
-                            </li>
-                            <li>
-                                <a href="#"> Shop Help</a>
-                            </li>
-                            <li>
-                                <a href="#"> Contact Us</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <h3>SITES</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"> DC</a>
-                            </li>
-                            <li>
-                                <a href="#"> MAD Magazine</a>
-                            </li>
-                            <li>
-                                <a href="#"> DC Kids</a>
-                            </li>
-                            <li>
-                                <a href="#"> DC Universe</a>
-                            </li>
-                            <li>
-                                <a href="#"> DC Power Visa</a>
-                            </li>
-                        </ul>
+                        @foreach($componentfooter as $lista)
+                            <ul>
+                               <li>
+                                 <h6 class="p-3 ps-0 text-white">
+                                    {{ $lista['nome']}}
+                                 </h6>
+                               </li>
+                               @foreach ($lista['sottocomponenti'] as $complista)
+                                   <li class="text-white">
+                                        {{$complista['nome']}}
+                                    </li>
+                                  @endforeach
+                            </ul>
+                            @endforeach
                     </div>
                     <div class="text-white">
                         all site content TIM @ 2020 DC entrainment , unless otherwise <span><a href="">noted here </a></span>. all rights reserved <br> <a href="">cookies settings</a>
